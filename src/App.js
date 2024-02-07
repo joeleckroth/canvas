@@ -12,15 +12,13 @@ function App() {
       <h2>Login</h2>
       <div className="responsive-three-column-grid">
         <div><a href="#img1-1"><img src="screenshots/bb-login.png" width="100%" alt="BloomBoard Login" /></a></div>
-        <div><a href="#img2-1"><img src="screenshots/canvas-login.png" width="100%" alt="Canvas Login" /></a>
+        <div><a href="#img1-2"><img src="screenshots/canvas-login.png" width="100%" alt="Canvas Login" /></a>
           <ul>
-            <li>Course Cards</li>
-            <li>ToDo List</li>
             <li>Customer Logo</li>
             <li>Custom Background Image</li>
           </ul>
         </div>
-        <div><a href="#img3-1"><img src="screenshots/login.png" width="100%" alt="New Login" /></a>
+        <div><a href="#img1-3"><img src="screenshots/login.png" width="100%" alt="New Login" /></a>
         <ul>
             <li>Updated Color Scheme, Borders, Shadows, Button styles</li>
             <li>High-Def Background Image</li>
@@ -64,6 +62,7 @@ function App() {
             <li>Updated Color Scheme, Borders, Shadows, Button styles</li>
             <li>Sticky Header</li>
             <li>Consistent component usage (forms, buttons, tabs)</li>
+            <li className="purple">Not Sure Profile is needed at the top</li>
           </ul>
         </div>
       </div>
@@ -128,6 +127,7 @@ function App() {
             <li>Updated Color Scheme, Borders, Shadows, Button styles</li>
             <li>Sticky Header</li>
             <li>Consistent component usage (forms, buttons, tabs)</li>
+            <li className="purple">Nav Should Include Consistent Table Row Styling</li>
           </ul>
         </div>
       </div>
@@ -184,6 +184,7 @@ function App() {
             <li>Updated Color Scheme, Borders, Shadows, Button styles</li>
             <li>High-Definition Image</li>
             <li>Consistent component usage (forms, buttons, tabs)</li>
+            <li className="purple">Sub Content Spacing needs to be more Obvious</li>
           </ul>
         </div>
       </div>
@@ -193,8 +194,8 @@ function App() {
       {/* List of images for lightbox */}
 
       <a href="#" className="lightbox" id="img1-1"><img src="screenshots/bb-login.png" width="100%" alt="BloomBoard Login" /></a>
-      <a href="#" className="lightbox" id="img2-1"><img src="screenshots/canvas-login.png" width="100%" alt="Canvas Login" /></a>
-      <a href="#" className="lightbox" id="img3-1"><img src="screenshots/login.png" width="100%" alt="New Login" /></a>
+      <a href="#" className="lightbox" id="img1-2"><img src="screenshots/canvas-login.png" width="100%" alt="Canvas Login" /></a>
+      <a href="#" className="lightbox" id="img1-3"><img src="screenshots/login.png" width="100%" alt="New Login" /></a>
 
       <a href="#" className="lightbox" id="img2-1"><img src="screenshots/bb-dashboard.png" width="100%" alt="BloomBoard Dashboard" /></a>
       <a href="#" className="lightbox" id="img2-2"><img src="screenshots/canvas-dashboard.png" width="100%" alt="Canvas Dashboard" /></a>
