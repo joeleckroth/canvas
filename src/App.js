@@ -179,7 +179,7 @@ function App() {
       <div className="responsive-three-column-grid">
         <div><a href="#img9-1"><img src="screenshots/bb-degree.png" width="100%" alt="BloomBoard Current Degree View" /></a><a href="#img9-2"><img src="screenshots/bb-degree-2.png" width="100%" alt="BloomBoard Current Degree View" /></a></div>
         <div>No Comparison</div>
-        <div><a href="#img9-2"><img src="screenshots/degree.png" width="100%" alt="New Degree Styling" /></a>
+        <div><a href="#img9-3"><img src="screenshots/degree.png" width="100%" alt="New Degree Styling" /></a>
         <ul>
             <li>Updated Color Scheme, Borders, Shadows, Button styles</li>
             <li>High-Definition Image</li>
@@ -237,6 +237,7 @@ function App() {
 
       <a href="#" className="lightbox" id="img9-1"><img src="screenshots/bb-degree.png" width="100%" alt="BloomBoard Degree" /></a>
       <a href="#" className="lightbox" id="img9-2"><img src="screenshots/bb-degree-2.png" width="100%" alt="BloomBoard New Degree" /></a>
+      <a href="#" className="lightbox" id="img9-3"><img src="screenshots/degree.png" width="100%" alt="BloomBoard New Degree" /></a>
 
     </div>
   );
