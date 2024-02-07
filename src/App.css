@@ -1,38 +1,159 @@
 .App {
-  text-align: center;
+ color:#fff;
+ font-size:16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  background:#ffffff;
+  padding:1rem;
+  text-align:center;
+  color:#282c34;
+  width:100%;
+  position:sticky;
+  top:0;
+  box-shadow:0px 2px 3px #555;
+}
+.responsive-three-column-grid{
+  border-bottom:1px solid #333;
+  background:#eeeeee02;
+  border-top:1px solid #333;
+}
+.responsive-three-column-grid a img{
+  border:2px solid transparent;
+  display:block;
+  border-radius:2px;
+}
+.responsive-three-column-grid a{
+  margin-bottom:5px;
+  display:block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.responsive-three-column-grid a:last-of-type{
+  margin-bottom:0;
+}
+
+.responsive-three-column-grid a:hover img, .responsive-three-column-grid a:focus img{
+  border:2px solid #0057B8;
+}
+
+header img{
+  max-width:300px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin:0 auto;
+  text-align:center;
+}
+
+h3{
+  font-size:2rem;
+  padding:0;
+  margin:0;
+  font-weight:400;
+  color:#282c34;
+}
+
+h2{
+  font-weight:400;
+  text-align:center;
+  font-size:2rem;
+  margin:1rem 1rem .5rem;
+  padding:0;
+  text-shadow:2px 1px 1px #000;
+}
+
+ul{
+  margin:.5rem 0 0 ;
+  padding:0;
+}
+
+ul li{
+  display:inline-block;
+  padding:.2rem .5rem;
+  margin: 0em .5rem .5rem 0;
+  background:#0057B8;
+  border-radius:.3rem;
+  color:#fff;
+  font-size:.8rem;
+}
+
+ul li.purple{
+  background: #D4AEFE;
+  color:#000;
+}
+
+/* container */
+.responsive-three-column-grid, header {
+  display:block;
+}
+
+/* columns */
+.responsive-three-column-grid > *{
+  padding:1rem;
+}
+
+header > * {
+  padding:0rem;
+}
+
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* A bit of padding around image */
+  padding: 5rem 8em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+  overflow-y:scroll;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+/* tablet breakpoint */
+@media (min-width:768px) {
+  .responsive-three-column-grid,
+  header {
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:767px) {
+  header div:first-of-type, header div:nth-child(2){
+      display:none;
   }
-  to {
-    transform: rotate(360deg);
+  header img{
+    top: 0;
+    transform: none;
+  }
+  .lightbox {
+    padding:1rem;
   }
 }
