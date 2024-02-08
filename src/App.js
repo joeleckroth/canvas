@@ -204,7 +204,7 @@ function App() {
 
       <a href="#" className="lightbox" id="img3-1"><img src="screenshots/bb-profile.png" width="100%" alt="BloomBoard Profile" /></a>
       <a href="#" className="lightbox" id="img3-2"><img src="screenshots/canvas-profile.png" width="100%" alt="Canvas Profile" /></a>
-      <a href="#" className="lightbox" id="img3-3"><img src="screenshots/Profile.png" width="100%" alt="New Profile" /></a>
+      <a href="#" className="lightbox" id="img3-3"><img src="screenshots/profile.png" width="100%" alt="New Profile" /></a>
 
       <a href="#" className="lightbox" id="img4-1"><img src="screenshots/bb-faculty-dashboard.png" width="100%" alt="BloomBoard Faculty Dashboard" /></a>
       <a href="#" className="lightbox" id="img4-2"><img src="screenshots/bb-faculty-assessments.png" width="100%" alt="BloomBoard Faculty Assessments" /></a>
